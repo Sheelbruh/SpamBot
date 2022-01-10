@@ -84,7 +84,7 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"█▄░▄█ █▀▀ ▄▀▀░ ▄▀▄\n█░█░█ █▀▀ █░▀▌ █▀█\n▀░░░▀ ▀▀▀ ▀▀▀░ ▀░▀\n\nϟ ʀɪᴢᴏᴇʟ X sᴘᴀᴍ ϟ︎ `{ms}` ᴍs")
+        await event.edit(f"█▄░▄█ █▀▀ ▄▀▀░ ▄▀▄\n█░█░█ █▀▀ █░▀▌ █▀█\n▀░░░▀ ▀▀▀ ▀▀▀░ ▀░▀\n\nϟ 𝐌𝐄𝐆𝐀𝐒𝐓𝐀𝐑 𝐒𝐏𝐀𝐌 𝐁𝐎𝐓 ϟ︎ `{ms}` ᴍs")
         
         
 
@@ -100,7 +100,7 @@ async def ping(e):
 @Riz10.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        text = "**Restarting Your RiZoeL X Spam**.. Please Wait Until It Starts Again"
+        text = "**Restarting Your 𝐌𝐄𝐆𝐀𝐒𝐓𝐀𝐑 𝐒𝐏𝐀𝐌 𝐁𝐎𝐓**.. Please Wait Until It Starts Again"
         await e.reply(text, parse_mode=None, link_preview=None)
         try:
             await Riz.disconnect()
